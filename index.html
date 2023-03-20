@@ -14,9 +14,10 @@
             <div>
                 <form method="post" action="#">
                 <div class="row">
-                    <div class="form-group col-6">choose a kits:
+                    <div class="form-group col-6">
+                        <label name="kits" style="font-size: 20px">choose a kits:</label>
                         <label for="kits" style="max-width: 220px; max-height: 20px"></label>
-                        <select class="form-control" id="kits">
+                        <select multiple class="form-control" id="kits">
                             <option value="Copper">Copper</option>
                             <option value="Bronze">Bronze</option>
                             <option value="Silver">Silver</option>
@@ -26,8 +27,8 @@
                 </div>
                     <div class="row">
                             <div class="text mt-4 mb-4">
-                                <label name="Quantity" style="font-size:20px">Quantity:</label>
-                                <input type="number" name="Quantity" style="width:220px; height:30px; font-size: 20px">
+                                <label name="quantity" style="font-size:20px">Quantity:</label>
+                                <input type="number" name="quantity" style="width:220px; height:30px; font-size: 20px">
                             </div>
                         <div class="form-check" style="font-size:20px">
                             <div class="mt-4 mb-4" >
@@ -64,6 +65,9 @@
                                 <label name="password">Password:</label>
                                 <input type="password" name="password" style="width:220px; height:30px;">
                             </div>
+
+                            <!--- <input type="submit" value="submit" class="btn btn-primary"> --->
+                            <button type="submit" class="btn btn-primary" style="background-color: red">Submit</button>
 
 
                         </div>
